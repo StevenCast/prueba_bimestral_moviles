@@ -5,18 +5,34 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Calculo de Fechas</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-datetime id="primera-fecha"></ion-datetime>
 
 
-  <ion-datetime id="segunda-fecha"></ion-datetime>
+<ion-content [fullscreen]="true" class="ion-text-center">
+  <br>
 
+  <ion-item>
+    <b>Ingresa la primer Fecha para calcular</b>
+  </ion-item>
+  <ion-datetime [(ngModel)]="fecha1" presentation="date" ></ion-datetime>
+  <!-- <ion-datetime [(ngModel)]="fecha1" presentation="date" [preferWheel]="true"></ion-datetime> -->
+  <br>
+  <ion-item>
+  <b>Ingresa la segunda Fecha para calcular</b>  
+  </ion-item>
+  <ion-datetime [(ngModel)]="fecha2" presentation="date"></ion-datetime>
+  <br>
+  <div *ngIf="dias !== null">
+    <h2>La diferencia de dias entre ambas fechas es:</h2>
+    <p>{{ dias }} días</p>
+  </div>
+
+
+  <ion-button expand="full" (click)="calcularDias()" color="success">Calcular</ion-button>
+  <br>
+  
+  
+  
+  
 
 
 </ion-content>

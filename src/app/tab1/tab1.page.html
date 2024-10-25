@@ -12,8 +12,6 @@
       <ion-title size="large">Biografia</ion-title>
     </ion-toolbar>
   </ion-header>
-
-
   
 <ion-item>
   <ion-label>
@@ -79,15 +77,64 @@
 
 </ion-card>
 
-<ion-chip color="danger">Planes a futuro</ion-chip>
-<ion-button expand="block" (click)="setOpen(true)">Press here to know my future plans</ion-button>
-<ion-toast
-  [isOpen]="isToastOpen"
-  message="Este apartado esta todavia en construcción debido a que los planes a futuro estan todavia planeandose"
-  [duration]="5000"
-  (didDismiss)="setOpen(false)"
-></ion-toast>
+<ion-chip color="danger">Educación</ion-chip>
 
+        <ion-item>
+  
+          <ion-button id="popover-button" style="width: 70%; height: 5%;">Instituciones</ion-button>
+        <ion-popover trigger="popover-button" [dismissOnSelect]="true">
+          <ng-template>
+            <ion-content>
+              <ion-list>
+                <ion-item [button]="true" id="nested-trigger1">Escuela Politécnica Nacional</ion-item>
+                <ion-item [button]="true" id="nested-trigger2">Unidad Educativa Gran Colombia</ion-item>
+                <ion-popover trigger="nested-trigger1" [dismissOnSelect]="true" side="end">
+                  <ng-template>
+                    <ion-content>
+                      <ion-list>
+                        <ion-item [button]="true" [detail]="false">Tecnología Superior en Desarrollo de
+                          Software - 4to Semestre</ion-item>
+                      </ion-list>
+                    </ion-content>
+                  </ng-template>
+                </ion-popover>
+
+                <ion-popover trigger="nested-trigger2" [dismissOnSelect]="true" side="end">
+                  <ng-template>
+                    <ion-content>
+                      <ion-list>
+                        <ion-item [button]="true" [detail]="false">Bachillerato General Unificado
+                        </ion-item>
+                      </ion-list>
+                    </ion-content>
+                  </ng-template>
+                </ion-popover>
+                
+              </ion-list>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+        </ion-item>
+
+
+
+
+
+
+
+        <ion-chip color="danger">Planes a futuro</ion-chip>
+
+        <ion-item>
+        
+        <ion-button expand="block" (click)="setOpen(true)">Press here to know my future plans</ion-button>
+        </ion-item>
+        <ion-toast
+          [isOpen]="isToastOpen"
+          message="Este apartado esta todavia en construcción debido a que los planes a futuro estan todavia planeandose"
+          [duration]="5000"
+          (didDismiss)="setOpen(false)"
+        ></ion-toast>
+        
 
 
 
