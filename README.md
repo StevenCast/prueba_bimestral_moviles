@@ -8,7 +8,8 @@ Esta es una aplicación móvil desarrollada en **Ionic** que presenta varias fun
 - Esta pestaña proporciona una **descripción biográfica** del autor, utilizando 15 componentes de Ionic.
 - Incluye detalles sobre cualidades, habilidades, estudios y otros datos relevantes, ofreciendo una visión completa de la trayectoria del autor.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/0b8280cd-ae3b-4942-b340-28a1516259e7)
+
 
 
 ### 2. Fotografía del Autor
