@@ -1,0 +1,94 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Biografia
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Biografia</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  
+<ion-item>
+  <ion-label>
+    <h1>Biografia del autor</h1>
+    <p>Mi nombre es Steven Jahir Castillo Suqui  un estudiante de la Escuela Politecnica Nacional, la mayoria de mi vida he vivido en la ciudad de Quito (Ecuador), nacido el dia
+      14 de julio de 2003 y originario de
+      la provincia de El Oro, siempre he sido una persona temeraria y capaz de realizar las cosas de manera eficaz.</p>
+  </ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>
+    <ion-chip color="danger">Habilidades</ion-chip>
+    <p>Domino lenguajes como el Ingles, Español, y actualmente estoy estudiando portugues.</p>    
+  </ion-label>
+</ion-item>
+
+  
+  <ion-list>
+  <ion-chip color="danger">Materias vistas en el semestre actual de mi carrera</ion-chip>
+  <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+    <ion-item>
+      <ion-label>Aplicaciones Moviles </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+
+    <ion-item>
+      <ion-label> Aplicaciones Distribuidas </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+
+    <ion-item>
+      <ion-label> Tecnologías de la Seguridad</ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+
+    <ion-item>
+      <ion-label> Proyecto Curricular de Integración</ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+  </ion-reorder-group>
+</ion-list>
+
+
+<ion-chip color="danger">Aficiones</ion-chip>
+<ion-card>
+<img alt="Silhouette of mountains" src="https://ethic.es/wp-content/uploads/2023/04/videojuegos-1280x768.gif" width="200" style="text-align: center;"/>  
+<ion-card-header>
+    <ion-card-title>Videojuegos</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    A continuación, se presenta algunos de los videojuegos y sagas más importantes y con las que he disfrutado: 
+  </ion-card-content>
+
+  <ion-card-content>
+    <ion-button [disabled]="true">Legend of Zelda</ion-button>
+    <ion-button [disabled]="true">Counter Strike</ion-button>
+    <ion-button [disabled]="true">Grand Theft Auto</ion-button>
+    <ion-button [disabled]="true">Metro Saga</ion-button>
+    <ion-button [disabled]="true">Super Mario</ion-button>
+  </ion-card-content>
+
+
+</ion-card>
+
+<ion-chip color="danger">Planes a futuro</ion-chip>
+<ion-button expand="block" (click)="setOpen(true)">Press here to know my future plans</ion-button>
+<ion-toast
+  [isOpen]="isToastOpen"
+  message="Este apartado esta todavia en construcción debido a que los planes a futuro estan todavia planeandose"
+  [duration]="5000"
+  (didDismiss)="setOpen(false)"
+></ion-toast>
+
+
+
+
+</ion-content>
