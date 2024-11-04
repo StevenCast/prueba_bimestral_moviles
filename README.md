@@ -6,9 +6,13 @@ Esta es una aplicación móvil desarrollada en **Ionic** que presenta varias fun
 
 ### Splash Screen
 - Esta sección se presenta un splash de la aplicación, el cual tiene una duración de 3 segundos. 
+![WhatsApp Image 2024-11-03 at 22 50 58_2382a5d4](https://github.com/user-attachments/assets/452be186-0267-46ec-8ae8-b87a91b9a2d1)
+
 
 ### Icono personalizado
 - Icono presenado cuando la aplicación es instalada en un dispositivo Android.
+![WhatsApp Image 2024-11-03 at 23 05 16_e3517925](https://github.com/user-attachments/assets/479f9f9e-f3be-4170-849b-d525b7eb0283)
+
 
 ### 1. Descripción Biográfica del Autor
 - Esta pestaña proporciona una **descripción biográfica** del autor, utilizando 15 componentes de Ionic.
