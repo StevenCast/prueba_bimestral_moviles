@@ -4,6 +4,12 @@ Esta es una aplicación móvil desarrollada en **Ionic** que presenta varias fun
 
 ## Pestañas de la Aplicación
 
+### Splash Screen
+- Esta sección se presenta un splash de la aplicación, el cual tiene una duración de 3 segundos. 
+
+### Icono personalizado
+- Icono presenado cuando la aplicación es instalada en un dispositivo Android.
+
 ### 1. Descripción Biográfica del Autor
 - Esta pestaña proporciona una **descripción biográfica** del autor, utilizando 15 componentes de Ionic.
 - Incluye detalles sobre cualidades, habilidades, estudios y otros datos relevantes, ofreciendo una visión completa de la trayectoria del autor.
