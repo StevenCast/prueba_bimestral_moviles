@@ -10,7 +10,7 @@ Esta es una aplicación móvil desarrollada en **Ionic** que presenta varias fun
 
 
 ### Icono personalizado
-- Icono presenado cuando la aplicación es instalada en un dispositivo Android.
+- Icono presentado cuando la aplicación es instalada en un dispositivo Android.
 ![WhatsApp Image 2024-11-03 at 23 05 16_e3517925](https://github.com/user-attachments/assets/479f9f9e-f3be-4170-849b-d525b7eb0283)
 
 
